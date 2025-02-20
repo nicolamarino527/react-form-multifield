@@ -40,10 +40,14 @@ export default function Form() {
                 category: formData.category,
                 content: formData.content,
             }
+            // aggiungiamo il nuovo articolo all array
+            setTitles([...titles, newTitle]);
+
+            // resettiamo il form ai valori iniziali
+            setFormData(initialFormData);
         }
 
 
-        // a
 
         return (
             <div >
@@ -66,19 +70,19 @@ export default function Form() {
                     <form className="row g-3 p-4">
                         <div className="col-md-6">
                             <label htmlFor="inputEmail4" className="form-label text-white">Titolo</label>
-                            <input type="title" className="form-control" id="inputEmail4" placeholder="Inserisci il titolo del tuo articolo" />
+                            <input type="title" className="form-control" id="inputEmail4" name="title" value={formData.title} placeholder="Inserisci il titolo del tuo articolo" />
                         </div>
                         <div className="col-md-6">
                             <label htmlFor="inputPassword4" className="form-label text-white">Autore</label>
-                            <input type="author" className="form-control" id="inputPassword4" placeholder="Inserisci il nome dell'autore" />
+                            <input type="author" className="form-control" id="inputPassword4" name="author" value={formData.author} placeholder="Inserisci il nome dell'autore" />
                         </div>
                         <div className="col-12">
                             <label htmlFor="inputAddress" className="form-label text-white">Categoria</label>
-                            <input type="category" className="form-control" id="inputAddress" placeholder="Descrivi la categoria di cui tratta il tuo articolo" />
+                            <input type="category" className="form-control" id="inputAddress" name="category" value={formData.category} placeholder="Descrivi la categoria di cui tratta il tuo articolo" />
                         </div>
                         <div className="col-12">
                             <label htmlFor="inputAddress2" className="form-label text-white">Contenuto</label>
-                            <input type="content" className="form-control" id="inputAddress2" placeholder="Scrivi qui il contenuto" />
+                            <input type="content" className="form-control" id="inputAddress2" name="content" value={formData.ccontent} placeholder="Scrivi qui il contenuto" />
                         </div>
                         <div className="col-12">
                             <div className="form-check">
