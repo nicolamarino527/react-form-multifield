@@ -32,8 +32,18 @@ export default function Form() {
         const handleSubmit = (e) => {
             e.preventDefault();
 
+            // creiamo il nuovo articolo
+            const newTitle = {
+                id: titles.length + 1,
+                title: formData.title,
+                author: formData.author,
+                category: formData.category,
+                content: formData.content,
+            }
         }
 
+
+        // a
 
         return (
             <div >
@@ -86,4 +96,4 @@ export default function Form() {
             </div>
         )
     }
-
+}
