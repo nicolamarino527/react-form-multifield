@@ -15,11 +15,18 @@ const titles = [
     },
     {
         id: 3,
-        title: "Il futuro della sostenibilità",
-        author: "Alfredo Mea",
-        content: "La sostenibilità è il tema centrale per affrontare le sfide globali del futuro. Ecco come possiamo agire per un mondo più verde...",
+        title: "L'evoluzione del lavoro remoto",
+        author: "Marco Verdi",
+        content: "Il lavoro remoto ha guadagnato popolarità negli ultimi anni, ma ora sta diventando un aspetto centrale nel mondo del lavoro...",
+        category: "Lavoro"
+    },
+    {
+        id: 4,
+        title: "Il cambiamento climatico e le sue sfide",
+        author: "Alessandra Rossi",
+        content: "Il cambiamento climatico sta diventando una delle maggiori preoccupazioni a livello globale, con effetti devastanti per il nostro pianeta...",
         category: "Ambiente"
     }
 ];
 
-export default titles
+export default titles;
